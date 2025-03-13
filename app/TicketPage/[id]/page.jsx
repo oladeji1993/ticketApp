@@ -1,7 +1,7 @@
 import TickectForm from "@/app/(components)/TickectForm";
 
 const getTicketById = async (id) => {
-  const res = await fetch(`http://localhost:3000/api/Tickets/${id}`, {
+  const res = await fetch(`/api/Tickets/${id}`, {
     cache: "no-cache",
   });
   if (!res.ok) {
